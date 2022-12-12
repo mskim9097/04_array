@@ -11,7 +11,7 @@ public class ArrayRun {
 		//arrEx.ex4();
 		//arrEx.ex5();
 		//arrEx.ex6();
-		arrEx.ex7();
+		//arrEx.ex7();
 	}
 
 }
