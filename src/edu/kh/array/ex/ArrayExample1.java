@@ -228,6 +228,37 @@ public class ArrayExample1 {
 			System.out.println("존재하지 않음");
 		}
 	}
-
+	
+	public void ex8() {
+		
+		
+		System.out.print("문자열 입력 : ");
+		String input = sc.nextLine();
+		
+		char[] arr = new char[input.length()]; // 공간 생성
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = input.charAt(i);
+		}
+		
+		System.out.print("검색할 문자열 입력 : ");
+		char ch = sc.nextLine().charAt(0); 
+							//String.charAt(0) : 문자열 제일 앞 문자
+		
+		int count = 0; // 같은 글자 개수 세기 위한 변수
+		
+		for(int i = 0; i < arr.length; i++) {			
+			if(arr[i] == ch) {
+				count++;				
+			}			
+		}
+		
+		if(count > 0) {
+			System.out.println(count + "개 있음");
+		}else {
+			System.out.println("존재하지 않음");
+		}
+				
+	}
 
 }
