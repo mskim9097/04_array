@@ -121,7 +121,7 @@ public class ArrayExample1 {
 		int sum = 0;
 		
 		for(int i = 0; i < score.length; i++) {
-			System.out.print((i +1) + "번 점수 입력: ");
+			System.out.print((i + 1) + "번 점수 입력: ");
 			score[i] = sc.nextInt();
 			
 			sum += score[i];
@@ -134,7 +134,8 @@ public class ArrayExample1 {
 		for(int i = 0; i < score.length; i++)  {
 			if(score[i] > max) { // 최고점 비교
 				max = score[i];
-			} else if(score[i] < min) { // 최저점 비교
+			}
+			if(score[i] < min) { // 최저점 비교
 				min = score[i];
 			}
 		}
