@@ -22,6 +22,7 @@ public class PracticeRun {
 		//arrEx.practice12();
 		//arrEx.practice13();
 		arrEx.practice14();
+		
 	}
 
 }
